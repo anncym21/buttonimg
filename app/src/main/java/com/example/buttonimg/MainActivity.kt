@@ -13,7 +13,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var Pies = true
+
         val imageButton = findViewById<ImageButton>(R.id.imageButton)
-        imageButton?.setOnClickListener { Toast.makeText(this@MainActivity, R.string.image_button_clicked, Toast.LENGTH_SHORT).show() }
+        imageButton?.setOnClickListener {
+            Toast.makeText(this@MainActivity,
+                R.string.image_button_clicked, Toast.LENGTH_SHORT).show()
+            if(Pies==true) {
+                imageButton.setImageResource(R.drawable.pies2)
+                Pies=false
+            }else{
+                Pies=true
+                imageButton.setImageResource(R.drawable.pies1)
+            }
+
+        }
     }
 }
