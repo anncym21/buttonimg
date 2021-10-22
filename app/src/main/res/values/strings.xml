@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">buttonimg</string>
+    <string name="this_is_imagebutton">This is imageButton</string>
+    <string name="image_button_clicked">You clicked imageButton</string>
+</resources>
